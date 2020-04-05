@@ -28,4 +28,147 @@ body {
   line-height: 10rem;
   font-size: 6em;
   letter-spacing: 1rem;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.content span {
+  position: absolute;
+  background: var(--secondaryColor);
+}
+
+.content span:nth-child(1) {
+  width: 100%;
+  height: .5rem;
+  top: 0;
+  left: -100%;
+  animation: animate1 1s linear infinite;
+}
+
+.content span:nth-child(3) {
+  width: 100%;
+  height: .5rem;
+  bottom: 0;
+  right: -100%;
+  animation: animate3 1s linear infinite;
+}
+
+.content span:nth-child(2) {
+  width: .5rem;
+  height: 100%;
+  right: 0;
+  top: -100%;
+  animation: animate2 1s linear infinite;
+}
+
+.content span:nth-child(4) {
+  width: .5rem;
+  height: 100%;
+  left: 0;
+  bottom: -100%;
+  animation: animate4 1s linear infinite;
+}
+
+@keyframes animate1 {
+  0% {
+    left: 100%;
+  }
+
+  20% {
+    left: 0%;
+  }
+
+  40% {
+    left: 100%;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  80% {
+    left: 100%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+
+  20% {
+    top: -100%;
+  }
+
+  40% {
+    top: 0%;
+  }
+
+  60% {
+    top: 100%;
+  }
+
+  80% {
+    top: 100%;
+  }
+
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+
+  20% {
+    right: -100%;
+  }
+
+  40% {
+    right: -100%;
+  }
+
+  60% {
+    right: 0%;
+  }
+
+  80% {
+    right: 100%;
+  }
+
+  100% {
+    right: 100%;
+  }
+}
+
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+
+  20% {
+    bottom: -100%;
+  }
+
+  40% {
+    bottom: -100%;
+  }
+
+  60% {
+    bottom: -100%;
+  }
+
+  80% {
+    bottom: 0%;
+  }
+
+  100% {
+    bottom: 100%;
+  }
 }
