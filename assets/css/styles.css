@@ -22,8 +22,10 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 35rem;
-  height: 15rem;
-  border-bottom: .5rem solid;
-  animation: animateLine 5s linear infinite;
+  width: 40rem;
+  height: 10rem;
+  text-align: center;
+  line-height: 10rem;
+  font-size: 6em;
+  letter-spacing: 1rem;
 }
